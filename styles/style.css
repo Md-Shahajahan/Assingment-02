@@ -1,0 +1,95 @@
+    *{
+        margin:0;
+        padding:0;
+    }
+    /* inter font related style  */
+    
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+/* ....................this is nav related link........... */
+header{
+    max-width:1600px;
+    margin:0 auto;
+    background-color:#1A0B2E;
+}
+nav{
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:24px 0;
+}
+.thewave{
+    font-size:bold;
+    color:white;
+}
+.gradient{
+    background:linear-gradient(20deg,#f7e83fc3,#FB09B4,#9100F8);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+.nav-links ul{
+    list-style: none;
+    display:flex;
+    gap:32px;
+    color:white;
+
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight:500;
+
+}
+
+.btn1 button{
+cursor: pointer;
+width:135px;
+color:white;
+padding:13px 16px;
+border-radius: 10000px;
+background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8)
+
+}
+.checkbox,
+.hamburger{
+    display:none;
+}
+@media screen and (max-width:576px){
+    .btn1, .checkbox{
+        display:none;
+    }
+    .hamburger{
+        display:block;
+        cursor:pointer;
+        
+    }
+    .hamburger-icon{
+        display:block;
+        width:40px;
+    }
+    .nav-links .links{
+        display:none;
+        position:absolute;
+        flex-direction: column;
+        top:60px;
+        right:10%;
+        background-color: #1A0B2E;
+        border:3px solid;
+        border-image-source:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8);
+        border-image-slice:1;
+        border-radius:8px;
+        width:100px;
+        align-items: center;
+        padding:10px;
+    }
+    .nav-links .links li a{
+       
+    }
+    .checkbox:checked + .hamburger + .links{
+        display:flex;
+    }
+}
