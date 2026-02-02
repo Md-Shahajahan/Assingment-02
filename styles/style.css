@@ -58,6 +58,78 @@ background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8)
 .hamburger{
     display:none;
 }
+/* .............banner-section related style  */
+.banner-section{
+    max-width:1600px;
+    height: 760px ;
+    margin:0 auto;
+    background:url(/assets/hero-bg.png);
+    background-repeat: no-repeat;
+    
+}
+.banner{
+    padding-top:101px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-img{
+    display:flex;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    width:350px;
+    height:350px;
+    background: url(/assets/hero-circle.png);
+    position:relative;
+}
+.banner-img .badge{
+    position: absolute;
+    top:0;
+    right:0;
+    width:75px;
+    border-radius: 1000px;
+    background-color: #00FF88;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+}
+.banner-img .badge p{
+    font-weight:600;
+    font-size:18px;
+    padding:8px 16px;
+    
+}
+.hero-title{
+    color: white;
+    font-weight:800;
+    font-size:4rem;
+}
+.hero-description{
+    color:white;
+    margin-bottom:24px;
+}
+.btn-box{
+    display: inline-flex;
+    gap:8px;
+}
+.btn2, .btn3 {
+    display:flex;
+    gap:8px;
+    padding:13px 20px;
+    align-items: center;
+    border-radius: 10000px;
+    font-weight: 600;
+}
+.btn2{
+color:white;
+background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8);
+}
+.btn3{
+    border:1px solid #00FF88;
+    color:#00FF88;
+    background: transparent;
+}
+/* ....................media query related style .............  */
 @media screen and (max-width:576px){
     .btn1, .checkbox{
         display:none;
@@ -85,11 +157,23 @@ background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8)
         width:100px;
         align-items: center;
         padding:10px;
+        z-index: 1;
     }
-    .nav-links .links li a{
-       
-    }
+
     .checkbox:checked + .hamburger + .links{
         display:flex;
+    }
+    .banner-section{
+        background-position: center
+    }
+    .hero-title,
+    .hero-description{
+        width:90%;
+        text-align: center;
+    }
+}
+@media screen and (min-width:992px) {
+    .banner-section{
+        background-position:center;
     }
 }
