@@ -129,6 +129,59 @@ background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8);
     color:#00FF88;
     background: transparent;
 }
+/* about section related style  */
+.about{
+    max-width: 1600px;
+    height:646px;
+    margin:0 auto;
+    background-color: #1A0B2E;
+}
+.about-info{
+    width:75%;
+    max-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+    
+}
+.about-info h2{
+    color:white;
+    font-size:3rem;
+    font-weight:bold;
+}
+.paragraph1,
+.paragraph2{
+    color:white;
+    line-height:30px;
+}
+.about-info hr{
+margin-top:80px;
+margin-bottom:80px;
+border:0;
+border-top: 1px solid rgba(255, 255, 255, 0.167);
+}
+.about-works{
+    width:75%;
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    gap:80px;
+}
+.info{
+    width:240px;
+}
+.info h3{
+    font-size:3rem;
+    font-weight:900;
+    color:#00FF88;
+    margin-bottom:16px;
+}
+.info p{
+    color:white;
+
+}
+
+
 /* ....................media query related style .............  */
 @media screen and (max-width:576px){
     .btn1, .checkbox{
@@ -151,7 +204,8 @@ background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8);
         right:10%;
         background-color: #1A0B2E;
         border:3px solid;
-        border-image-source:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8);
+        border-image-source:
+        linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8);
         border-image-slice:1;
         border-radius:8px;
         width:100px;
@@ -171,9 +225,54 @@ background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8);
         width:90%;
         text-align: center;
     }
+    .about-info h2{
+        font-size:2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .paragraph1{
+        text-align:justify;
+
+    }
+    .paragraph1 br{
+        display:none;
+    }
+    .about-works{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        gap:20px;
+    }
+        .about-info hr{
+        margin-top:20px;
+        margin-bottom:30px;
+}
+.info h3{
+    font-size:2.5rem;
+    font-weight:900;
+  
+}
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+     .banner-section{
+        background-position:center;
+    }
+    .paragraph1 br{
+        display:none;
+    }
+        .about-works{
+            gap:60px;
+    }
+    .info h3{
+    font-size:2rem;
+    font-weight:900;
+  
+}
+
 }
 @media screen and (min-width:992px) {
     .banner-section{
         background-position:center;
+        margin:0 auto;
     }
 }
