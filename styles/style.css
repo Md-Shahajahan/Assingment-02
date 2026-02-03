@@ -180,11 +180,80 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     color:white;
 
 }
+/* ...............Why chose related style.............  */
+.why-chose{
+    max-width: 1600px;
+    margin:0 auto;
+   background-color: #230E3D;
+}
+.techwave-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+.title{
+    color:white;
+    font-size:3rem;
+    font-weight:bold;
+    margin-top:120px;
+    margin-bottom:40px
+}
+.information{
+    width:75%;
+    max-width:1200px;
+    margin-bottom:120px;
 
+}
+.info-card img{
+    margin-bottom:16px;
+}
+.info-card h3{
+    color:white;
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.info-card p{
+    color:rgba(255, 255, 255, 0.45);
+    font-size:1rem;
+    line-height: 1.5rem;
+
+}
+.information>*{
+    background-color: rgba(53, 17, 101, 0.4);
+    padding:40px;
+    border-radius: 40px;
+}
+.headphone{
+    grid-area: headphone;
+}
+.resource{
+    grid-area: resource;
+}
+.electric{
+    grid-area: electric;
+}
+.location{
+    grid-area: location;
+}
+.device{
+    grid-area:device;
+}
+   .information{
+    display: grid;
+    gap:30px;
+    grid-template-areas:
+    "headphone   device device"
+    "headphone   location location"
+    "exclusive   exclusive  resource";
+   }
 
 /* ....................media query related style .............  */
-@media screen and (max-width:576px){
-    .btn1, .checkbox{
+ 
+    @media screen and (max-width:576px) {
+    .btn1,
+    .checkbox {
         display:none;
     }
     .hamburger{
@@ -218,7 +287,7 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
         display:flex;
     }
     .banner-section{
-        background-position: center
+        background-position: center;
     }
     .hero-title,
     .hero-description{
@@ -251,8 +320,21 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     font-size:2.5rem;
     font-weight:900;
   
-}
-}
+} 
+.title{
+    font-size: 1.8rem;
+    margin-top: 50px;
+} 
+ .information{
+    grid-template-areas:
+    "headphone"
+    "device"
+    "location"
+    "exclusive"
+    "resource";
+   }
+    }
+
 @media screen and (min-width:576px) and (max-width:992px) {
      .banner-section{
         background-position:center;
@@ -268,7 +350,21 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     font-weight:900;
   
 }
-
+ .information{
+    grid-template-areas:
+    "headphone  headphone"
+    "device     location"
+    
+    "resource   resource"
+    "exclusive  exclusive";
+   }
+   .exclusive{
+    grid-column:span 2;
+   }
+.title{
+    font-size: 2rem;
+    margin-top: 50px;
+} 
 }
 @media screen and (min-width:992px) {
     .banner-section{
