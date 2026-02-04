@@ -231,8 +231,8 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
 .resource{
     grid-area: resource;
 }
-.electric{
-    grid-area: electric;
+.exclusive{
+    grid-area: exclusive;
 }
 .location{
     grid-area: location;
@@ -244,11 +244,87 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     display: grid;
     gap:30px;
     grid-template-areas:
-    "headphone   device device"
-    "headphone   location location"
+    "headphone   device     device"
+    "headphone   location   location"
     "exclusive   exclusive  resource";
    }
+   /* feature related style  */
+   .features{
+    max-width: 1600px;
+    margin:0 auto;
+    background-color: #1A0B2E;
+   }
+   .feature-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:120px 200px;
+   }
+   .feature-container h2{
+    color:white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom:40px;
+   }   
+   .card-container{
+    display:inline-flex;
+    gap:30px;
+    margin-bottom: 120px;
+   }
+   .feature-card{
+    width:380px;
+    height:440px;
+    background-color: #250D44;
+    border-radius: 20px;
+    
+   }
+   .iframe{
+    border-radius: 20px 20px 0 0;
+   }
+    .feature-card h3{
+        color:white;
+        font-size: 1.5rem;
+        font-weight:bold;
+        margin:24px 24px 12px;
+    }
+     .feature-card .p1{
+        color:rgba(255, 255, 255, 0.361);
+        margin:0 24px 12px 24px;
 
+     }
+     .feature-card .p2{
+        color:#00FF88;
+        gap:6px;
+        font-weight: 600;
+        display: inline-flex;
+        margin:0 24px 24px 24px;
+
+     }
+     /* alex-kumar related style  */
+     .alex-kumar{
+        display: inline flex;
+        gap:24px;
+        background-color: rgba(53, 17, 101, 0.4);
+        border-radius: 20px;
+        padding:40px;
+     }
+     .about-alex h3{
+        color:white;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 16px;
+     }
+     .about-alex p{
+        color:rgba(255, 255, 255, 0.361);
+        margin-bottom: 16px;
+     }
+     .about-alex ul{
+        display:inline-flex;
+        list-style: none;
+        gap:10px;
+
+     }
 /* ....................media query related style .............  */
  
     @media screen and (max-width:576px) {
@@ -358,9 +434,7 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     "resource   resource"
     "exclusive  exclusive";
    }
-   .exclusive{
-    grid-column:span 2;
-   }
+
 .title{
     font-size: 2rem;
     margin-top: 50px;
