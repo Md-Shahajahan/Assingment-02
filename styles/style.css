@@ -63,7 +63,7 @@ background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8)
     max-width:1600px;
     height: 760px ;
     margin:0 auto;
-    background:url(../assets/hero-bg.png);
+    background:url("../assets/hero-bg.png");
     background-repeat: no-repeat;
     
 }
@@ -81,7 +81,7 @@ background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8)
     justify-content: center;
     width:350px;
     height:350px;
-    background: url(../assets/hero-circle.png);
+    background:url("../assets/hero-circle.png");
     position:relative;
 }
 .banner-img .badge{
@@ -348,7 +348,7 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
         max-width: 1600px;
         height:412px;
         margin:0 auto;
-        background: url(../assets/footer-bg.png);
+        background: url("../assets/footer-bg.png");
         align-items: center;
      }
      .footer-section{
