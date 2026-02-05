@@ -342,6 +342,52 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
         gap:10px;
 
      }
+     /* ...................footer related style........  */
+     footer{
+        display:flex;
+        max-width: 1600px;
+        height:412px;
+        margin:0 auto;
+        background: url(../assets/footer-bg.png);
+        align-items: center;
+     }
+     .footer-section{
+        display:flex;
+        flex-direction: column;
+        width:85%;
+        max-width: 1360px;
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+     }
+     .footer-section h1{
+        color:white;
+        font-size:4rem;
+        font-weight:bold ;
+        margin-bottom: 32px;
+     }
+     .footer-section span{
+        background:linear-gradient(20deg, #f7e83f,#FB09B4, #9100F8);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+     }
+     .social-container{
+        display:flex;
+        gap:40px;
+     }
+     .social-container p{
+        color:rgba(255, 255, 255, 0.361);
+        align-items: center;
+        
+     }
+     .social-container img{
+        margin-right: 8px;
+     }
+     .copyright{
+        color:rgba(255, 255, 255, 0.361);
+        margin-top:32px;
+     }
 /* ....................media query related style .............  */
  
     @media screen and (max-width:576px) {
@@ -429,7 +475,6 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
    /* feature relates query */
    .feature-container{
     padding:20px;
-    margin-bottom: 40px;
    }
 
   .feature-container h2{
@@ -484,6 +529,9 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     font-size: 2rem;
     margin-top: 50px;
 } 
+   footer{
+    background-position: center;
+   }
 /* feature related query
  */
     .feature-container{
@@ -523,6 +571,9 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
         gap:20px;
      }
 }
+   footer{
+    background-position: center;
+   }
 @media screen and (min-width:992px) {
     .banner-section{
         background-position:center;
@@ -540,5 +591,8 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
    .feature-card .p1{
     overflow: hidden;
     text-overflow: ellipsis;
+   }
+   footer{
+    background-position: center;
    }
 }
