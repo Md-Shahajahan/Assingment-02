@@ -54,6 +54,12 @@ border-radius: 10000px;
 background:linear-gradient(30deg,#f7e83f,#FB09B4,#9100F8)
 
 }
+.btn1 button:hover{
+width:100px;
+height:50px;
+border:4px solid white;
+
+}
 .checkbox,
 .hamburger{
     display:none;
