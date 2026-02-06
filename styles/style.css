@@ -344,11 +344,20 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
         color:rgba(255, 255, 255, 0.361);
         margin-bottom: 16px;
      }
-     .about-alex ul{
+     .about-alex .link-box{
         display:inline-flex;
-        list-style: none;
-        gap:10px;
+        margin-right:8px;
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        border:1px solid rgba(255, 255, 255, 0.233);
+        align-items: center;
+        justify-content: center;
+     }
 
+     .link-box img{
+        width:20px;
+        height:20px;
      }
      /* ...................footer related style........  */
      footer{
@@ -514,11 +523,6 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     justify-content: center;
     text-align: center;
    }
-   .about-alex ul{
-        margin-top: 20px;
-        gap:20px;
-
-     }
      footer{
         height:300px;
      }
@@ -606,10 +610,6 @@ border-top: 1px solid rgba(255, 255, 255, 0.167);
     text-align: center;
     margin:40px;
    }
-   .about-alex ul{
-        margin-top: 20px;
-        gap:20px;
-     }
 }
    footer{
     background-position: center;
